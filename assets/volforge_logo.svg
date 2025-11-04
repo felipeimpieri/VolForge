@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="140" viewBox="0 0 560 140">
+  <rect width="560" height="140" fill="#0f0f10"/>
+  <g transform="translate(24,20)">
+    <path d="M0 90 L36 12 L52 28 L16 104 Z" fill="#ff7f27"/>
+    <rect x="58" y="26" width="10" height="64" fill="#ff7f27"/>
+    <text x="84" y="72" fill="#e9edf1" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="700" font-size="44">
+      VolForge
+    </text>
+  </g>
+</svg>
