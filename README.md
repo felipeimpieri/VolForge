@@ -1,21 +1,29 @@
-# VolForge ⚒️
-*Advanced stochastic modeling & option pricing lab.*
+# ⚒️ VolForge
 
-![VolForge](assets/volforge_logo.svg)
+<img src="assets/volforge_logo.svg" width="340"/>
 
-## Features
-- **Models**: Black–Scholes (analytic + Greeks) and Heston Monte Carlo (antithetic, full truncation).
-- **Variance Reduction**: GBM control variate, antithetic variates.
-- **Greeks**: BS analytics; Heston pathwise Delta + FD with CRN for `delta`, `vega_v0`, `rho_corr`, `kappa`, `theta`, `xi`.
-- **Calibration**: Fit Heston to a BS implied-vol surface from CSV.
-- **CLI**: `volforge bs|heston|greek|calibrate`
-- **UI**: Streamlit app (`streamlit run streamlit_app.py`).
+**Advanced stochastic modeling & option pricing lab (Black–Scholes & Heston)**  
+Educational only — not investment advice.
 
-> Educational only. Not investment advice.
+---
 
-## Quickstart
+### 💡 What it does
+
+VolForge lets you simulate and price options using:
+- **Black–Scholes** (analytical model with full Greeks)
+- **Heston Monte Carlo** (variance reduction: antithetic & control variate)
+- **CLI support**: `volforge bs | heston | greek | calibrate`
+- **UI** built with **Streamlit** for instant visualization
+
+---
+
+### ⚙️ Quick start
+
 ```bash
+git clone https://github.com/felipeimpieri/VolForge.git
+cd VolForge
+python -m venv .venv
+.\.venv\Scripts\activate
 pip install -e .
-pytest -q
+pip install streamlit pytest
 streamlit run streamlit_app.py
-```
